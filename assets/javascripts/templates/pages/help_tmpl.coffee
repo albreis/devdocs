@@ -48,15 +48,15 @@ app.templates.helpPage = ->
       <code class="_label">esc</code>.
     <dt id="url_search">Prefilling the search field
     <dd>
-      The search can be prefilled from the URL by visiting <a href="/#q=keyword" target="_top">devdocs.io/#q=keyword</a>.
+      The search can be prefilled from the URL by visiting <a href="/#q=keyword" target="_top">docs.ersolucoesweb.com.br/#q=keyword</a>.
       Characters after <code class="_label">#q=</code> will be used as search query.<br>
       To search a single documentation, add its name (or an abbreviation) and a space before the keyword:
-      <a href="/#q=js%20date" target="_top">devdocs.io/#q=js date</a>.
+      <a href="/#q=js%20date" target="_top">docs.ersolucoesweb.com.br/#q=js date</a>.
     <dt id="browser_search">Searching using the address bar
     <dd>
       DevDocs supports OpenSearch. It can easily be installed as a search engine on most web browsers:
       <ul>
-        <li>On Chrome, the setup is done automatically. Simply press <code class="_label">tab</code> when devdocs.io is autocompleted
+        <li>On Chrome, the setup is done automatically. Simply press <code class="_label">tab</code> when docs.ersolucoesweb.com.br is autocompleted
             in the omnibox (to set a custom keyword, click <em>Manage search engines\u2026</em> in Chrome's settings).
         <li>On Firefox, <a href="https://support.mozilla.org/en-US/kb/add-or-remove-search-engine-firefox#w_add-a-search-engine-from-the-address-bar">add the search from the address bar</a>:
             Click ••• in the address bar, and select <em>Add Search Engine</em>. Then, you can add a keyword for this search engine in the preferences.

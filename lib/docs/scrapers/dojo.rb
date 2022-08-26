@@ -8,7 +8,7 @@ module Docs
 
     # Dojo expects all the requests to be xhrs or it redirects you back to the docs home page
     # where it uses js to call the backend based on the URL so you get the appropriate documentation
-    self.headers = { 'User-Agent' => 'devdocs.io' , 'X-Requested-With' => 'XMLHttpRequest'  }
+    self.headers = { 'User-Agent' => 'docs.ersolucoesweb.com.br' , 'X-Requested-With' => 'XMLHttpRequest'  }
     self.links = {
       home: 'http://dojotoolkit.org',
       code: 'https://github.com/dojo/dojo'

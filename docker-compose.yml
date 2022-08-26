@@ -1,0 +1,56 @@
+---
+version: "3.8"
+services:
+  devdocs:
+    image: albreis/devdocs
+    restart: unless-stopped
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          cpus: "2.0"
+          memory: 1024M
+      placement:
+        max_replicas_per_node: 1
+      update_config:
+        parallelism: 2
+        delay: 10s
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
+      labels:
+        - traefik-public
+        - traefik.enable=true
+        - traefik.docker.network=traefik-public
+        # - traefik.http.middlewares.https-redirect.redirectscheme.scheme=https
+        # - traefik.http.middlewares.https-redirect.redirectscheme.permanent=true
+        - traefik.http.routers.ersolucoesweb-docs-http.rule=Host(`docs.ersolucoesweb.com.br`)
+        - traefik.http.routers.ersolucoesweb-docs-http.entrypoints=http
+        # - traefik.http.routers.ersolucoesweb-docs-http.middlewares=strip
+        - traefik.http.routers.ersolucoesweb-docs-https.rule=Host(`docs.ersolucoesweb.com.br`)
+        - traefik.http.routers.ersolucoesweb-docs-https.entrypoints=https
+        - traefik.http.routers.ersolucoesweb-docs-https.tls=true
+        - traefik.http.routers.ersolucoesweb-docs-https.tls.certresolver=le
+        # - traefik.http.routers.ersolucoesweb-docs-https.middlewares=strip
+        # - traefik.http.middlewares.strip.stripprefix.prefixes=/blog
+        - traefik.http.services.ersolucoesweb-docs-https.loadbalancer.server.port=9292
+    networks:
+    - web
+    - internal
+    - traefik-public
+    ports:
+    - 9292:9292
+    # volumes:
+      # - ./public/sitemap.xml:/devdocs/public/sitemap.xml
+volumes:
+  er_docs_v2:
+networks:
+  traefik-public:
+    external: true
+  web:
+    external: true
+  internal:
+    external: false
+...

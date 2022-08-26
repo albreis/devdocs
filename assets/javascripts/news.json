@@ -425,7 +425,7 @@
     "New <a href=\"/http/\">HTTP</a> documentation"
   ], [
     "2013-07-15",
-    "URL search now works with single documentations: <a href=\"/#q=js%20sort\">devdocs.io/#q=js sort</a>"
+    "URL search now works with single documentations: <a href=\"/#q=js%20sort\">docs.ersolucoesweb.com.br/#q=js sort</a>"
   ], [
     "2013-07-13",
     "Added syntax highlighting",
@@ -445,7 +445,7 @@
   ], [
     "2013-07-06",
     "New <a href=\"/dom/\">DOM</a> and <a href=\"/dom_events/\">DOM Events</a> documentations\nDevDocs now includes almost all reference documents available on the Mozilla Developer Network.\nBig thank you to Mozilla and all the people that contributed to MDN.",
-    "Implemented URL search: <a href=\"/#q=sort\">devdocs.io/#q=sort</a>"
+    "Implemented URL search: <a href=\"/#q=sort\">docs.ersolucoesweb.com.br/#q=sort</a>"
   ], [
     "2013-07-02",
     "New <a href=\"/javascript/\">JavaScript</a> documentation"

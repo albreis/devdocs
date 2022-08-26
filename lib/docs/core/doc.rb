@@ -176,7 +176,7 @@ module Docs
         options[:release]
       else
         # If options[:release] does not exist, we return the Epoch timestamp of when the doc was last modified in DevDocs production
-        json = fetch_json('https://devdocs.io/docs.json', opts)
+        json = fetch_json('https://docs.ersolucoesweb.com.br/docs.json', opts)
         items = json.select {|item| item['name'] == self.class.name}
         items = items.map {|item| item['mtime']}
         items.max

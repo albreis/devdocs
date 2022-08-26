@@ -239,7 +239,7 @@ class DocsCLI < Thor
           FileUtils.mkpath(dir)
 
           ['index.json', 'meta.json'].each do |filename|
-            json = "https://documents.devdocs.io/#{doc.path}/#{filename}?#{time}"
+            json = "https://documents.docs.ersolucoesweb.com.br/#{doc.path}/#{filename}?#{time}"
             begin
               open(json) do |file|
                 mutex.synchronize do
