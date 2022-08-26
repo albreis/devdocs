@@ -16,10 +16,10 @@ echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
 
 # print urls
 IFS=$'\r\n'
-find . -type f | \
+find docs -type f | \
 while read -r line; do
   DATE=$(date)
-  FILE=$(echo "$line" | cut -c 3-900)
+  FILE=$(echo "$line" | cut -c 6-900)
   FILE=$(echo "$FILE" | sed s/".html"//)
   echo "<url>"
   echo " <loc>${URL}${FILE}</loc>"

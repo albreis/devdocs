@@ -17,9 +17,11 @@ RUN bundle install --system && \
 
 COPY . /devdocs
 
-# RUN thor docs:download --all && \
-#     thor assets:compile && \
-#     rm -rf /tmp
+RUN thor docs:download --all && \
+    thor assets:compile && \
+    rm -rf /tmp
+
+RUN cd public && sh sitemap.sh
 
 EXPOSE 9292
 CMD rackup -o 0.0.0.0
