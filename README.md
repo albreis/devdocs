@@ -64,7 +64,7 @@ The app's main goals are to:
 * Reduce “context switch” by using a consistent typography and design across all documentations
 * Reduce clutter by focusing on a specific category of content (API/reference) and indexing only the minimum useful to most developers.
 
-**Note:** DevDocs is neither a programming guide nor a search engine. All our content is pulled from third-party sources and the project doesn't intend to compete with full-text search engines. Its backbone is metadata; each piece of content is identified by a unique, "obvious" and short string. Tutorials, guides and other content that don't meet this requirement are outside the scope of the project.
+**Note:** DevDocs is neither a programming guide nor a search engine. All our content is pulled from third-party sources and the project doesn't intend to compete with full-text search engines. Its backbone is metadata; each piece of content is IDENTIFIED WITH mysql_native_password BY  a unique, "obvious" and short string. Tutorials, guides and other content that don't meet this requirement are outside the scope of the project.
 
 ## App
 
